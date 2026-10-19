@@ -1,0 +1,331 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild -project TunerSimon.xcodeproj -scheme TunerSimon -configuration Release -destination generic/platform=iOS -derivedDataPath /Users/runner/work/_temp/build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'TunerSimon' in project 'TunerSimon' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 377fc8b2b9946b89c6231b841bd7ceb5
+Build description path: /Users/runner/work/_temp/build/Build/Intermediates.noindex/XCBuildData/377fc8b2b9946b89c6231b841bd7ceb5.xcbuilddata
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /Users/runner/work/_temp/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /Users/runner/work/_temp/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Products
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Intermediates.noindex
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Intermediates.noindex
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon-17cce5a04fa824b06336b85eb72b6041-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon-17cce5a04fa824b06336b85eb72b6041-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Products/Release-iphoneos
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Products/Release-iphoneos
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/_temp/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/tuner-simon/tuner-simon/TunerSimon.xcodeproj
+    builtin-create-build-directory /Users/runner/work/_temp/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyStaticMetadataFileList (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyMetadataFileList (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-project-headers.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-own-target-headers.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-generated-files.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-target-headers.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-non-framework-target-headers.hmap (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_const_extract_protocols.json (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftConstValuesFileList (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.LinkFileList (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-OutputFileMap.json (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    write-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-OutputFileMap.json
+
+MkDir /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /bin/mkdir -p /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app
+
+ProcessInfoPlistFile /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Info.plist /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/Info.plist (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-infoPlistUtility /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Info.plist
+
+CpResource /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/tunings.json /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/tunings.json (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/tunings.json /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app
+
+SwiftDriver TunerSimon normal arm64 com.apple.xcode.tools.swift.compiler (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name TunerSimon -O -whole-module-optimization @/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -F /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64 -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/_temp/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/_temp/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-generated-files.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-own-target-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-project-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-Swift.h -working-directory /Users/runner/work/tuner-simon/tuner-simon -no-emit-module-separately-wmo
+
+SwiftDriver\ Compilation TunerSimon normal arm64 com.apple.xcode.tools.swift.compiler (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name TunerSimon -O -whole-module-optimization @/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -F /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64 -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/_temp/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/_temp/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-generated-files.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-own-target-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-project-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-Swift.h -working-directory /Users/runner/work/tuner-simon/tuner-simon -no-emit-module-separately-wmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_SwiftConcurrencyShims-F3YTGOYKH3DKL98N3ZTIR2944.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_float-9W8CB93B84EB1MO06AR3OR11H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_AvailabilityInternal-45TR88K1OA7ASPKX1NAZT44T7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdarg-9G77N7HD1AGHOR1Y2V8I12Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/ptrauth-85AR2DXEOX2TYGP3PDIQGAMXQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stddef-7C52JSCHH8MRU6R2G151RCEW5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftShims-1KO7MBM8H1HESYY7HIIOUZJGX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/ptrcheck-5KPVUQPWAIUHF01UGPHR152P7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdbool-F0FQNF0JI758I8BBVBMAG6H5C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/DeveloperToolsSupport-88B5WB9JFTV3O0CCSXVVNET3D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation1-60P2B7CBJTFL1CGD562Z7ALT0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation2-SWIC6OM3U1210GTJUCVMQEP8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_limits-2EPVB5YTPKWRFLTJX5EPKHRBX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/sys_types-2TIUF7QG33L8PE33BF1BYQ1JO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_tgmath-2U6JWQUYN05COZVZQ8NM0BUQV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdint-6351NXSP5AEHUAF8MH4BNXW1V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdatomic-BSRVW0BQEDXGNFVRH6SXCZV8Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation3-2O63044BA7J8BK4YQBATBSJ39.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_intrinsics-7Y49LPVMKV54V8M751SVPT5Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_inttypes-EIWKV31197RPCZYS9EGKQCS0H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Darwin-6VR8P866O4NLLULIWFVFRDMM4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/simd-ET9CEYOMVDCET25R7HZUKUZLD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/MachO-DYRP124LPSS67II5VZ1NKRJ19.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/ObjectiveC-3SVP19KSWZ9INJARPA4MXNHA3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/os_object-3Z7RKEYNC8XTMUWTE1NWIHIFP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Spatial-7902NKYINYUU4XS5OH9LJL0TZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/os_workgroup-8E1ZJXGS478NO4ZDM3NVECV4M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Dispatch-BPTG0RH0K5TWO64BFUB0Z14M1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/XPC-1PP4HBYRW39BV2AN7JIZOBBWY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreFoundation-4ZZ6893CG6X5D77SENXU5O9TZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/os-29FSJXVC6CWY4HC246MU6QFTB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Security-85EU79LEY49GF3U7J1MN0LQI7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreGraphics-4BNH92LIYUI08D14IOI5AX1BG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CFNetwork-99HSKJCNETUIU8HWEB0Q6LYEX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Foundation-BNN9C4US6R82QD33ZN3URZWCS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/ImageIO-AD7342ZF0O8JGUYM0V30977TK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreText-B07UNQCQC8F8GE8OCPYP9SJJU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Accessibility-DFXDY5DYDRZG8V4FMN0VWVA01.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/UIUtilities-B99HQOKQ4PLEA481IEIIBGY8B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/OSLog-1EBH3IJ7M4BWIUYO63W8Q9Z1Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/FileProvider-DJL879E7JJZDIDJRSDMOSP846.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreTransferable-NRAH44TECY4L8K9T9RMJP2JQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/IOSurface-1VNG3A2BIRVCZVB773DEZC3S6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/UniformTypeIdentifiers-8OLPIFMDE6784N2Q4Z1EYMYPR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreData-EP44733IVNBVK4NYPAUK4LUVW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Metal-29PZEG5LL61QUDEL6SP5SW1XA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/OpenGLES-4VSDUFFNBSUDYS9TC54QMB5MB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/Symbols-CN6NYA6GCZ6PFFOXRSXJ61MWX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/DataDetection-E3TRLVRTIJEZFSDDK9OG3ZPPA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/UserNotifications-4GLR990OTFV8BV0VYW85MY7G9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreVideo-ERJNZY01K7TWP3SWPLBE59XX3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/CoreImage-1KYA213RKKQ2IQU8981RQYFGQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/QuartzCore-DBPZ6FO7TTLFHBYTY24CSW7AE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftUICore-2O0JPM8SHC4VDW5AJS54LYIOR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/UIKit-D6DXWWO4JGRNKWLR863SW0V6Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftUI-2COA4H8TMSENY8IMHX9PUBLLB.pcm
+
+SwiftCompile normal arm64 Compiling\ TunerSimonApp.swift,\ ContentView.swift,\ Models.swift /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/TunerSimonApp.swift /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/ContentView.swift /Users/runner/work/tuner-simon/tuner-simon/TunerSimon/Models.swift /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/System.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreImage.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreText.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Accessibility.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Dispatch.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/QuartzCore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/FileProvider.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation3.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Symbols.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Swift.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/XPC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Foundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Builtin_float.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/OSLog.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation1.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Combine.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreData.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Spatial.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Darwin.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ObjectiveC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_StringProcessing.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Observation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Concurrency.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DataDetection.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation2.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/os.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreTransferable.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreGraphics.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UniformTypeIdentifiers.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DeveloperToolsSupport.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUICore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreVideo.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/simd.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Metal.swiftmodule/arm64e-apple-ios.swiftmodule /Users/runner/work/_temp/build/ModuleCache.noindex/CoreFoundation-4ZZ6893CG6X5D77SENXU5O9TZ.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/DataDetection-E3TRLVRTIJEZFSDDK9OG3ZPPA.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreTransferable-NRAH44TECY4L8K9T9RMJP2JQ.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/ptrauth-85AR2DXEOX2TYGP3PDIQGAMXQ.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_limits-2EPVB5YTPKWRFLTJX5EPKHRBX.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_AvailabilityInternal-45TR88K1OA7ASPKX1NAZT44T7.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/ObjectiveC-3SVP19KSWZ9INJARPA4MXNHA3.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/simd-ET9CEYOMVDCET25R7HZUKUZLD.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreData-EP44733IVNBVK4NYPAUK4LUVW.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftUI-2COA4H8TMSENY8IMHX9PUBLLB.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Dispatch-BPTG0RH0K5TWO64BFUB0Z14M1.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_float-9W8CB93B84EB1MO06AR3OR11H.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation2-SWIC6OM3U1210GTJUCVMQEP8.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CFNetwork-99HSKJCNETUIU8HWEB0Q6LYEX.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftUICore-2O0JPM8SHC4VDW5AJS54LYIOR.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Symbols-CN6NYA6GCZ6PFFOXRSXJ61MWX.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/ptrcheck-5KPVUQPWAIUHF01UGPHR152P7.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/IOSurface-1VNG3A2BIRVCZVB773DEZC3S6.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Foundation-BNN9C4US6R82QD33ZN3URZWCS.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/os_workgroup-8E1ZJXGS478NO4ZDM3NVECV4M.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation3-2O63044BA7J8BK4YQBATBSJ39.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/XPC-1PP4HBYRW39BV2AN7JIZOBBWY.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/UserNotifications-4GLR990OTFV8BV0VYW85MY7G9.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Security-85EU79LEY49GF3U7J1MN0LQI7.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/UIUtilities-B99HQOKQ4PLEA481IEIIBGY8B.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_SwiftConcurrencyShims-F3YTGOYKH3DKL98N3ZTIR2944.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_intrinsics-7Y49LPVMKV54V8M751SVPT5Y.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdint-6351NXSP5AEHUAF8MH4BNXW1V.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/OpenGLES-4VSDUFFNBSUDYS9TC54QMB5MB.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/DeveloperToolsSupport-88B5WB9JFTV3O0CCSXVVNET3D.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Spatial-7902NKYINYUU4XS5OH9LJL0TZ.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Accessibility-DFXDY5DYDRZG8V4FMN0VWVA01.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/SwiftShims-1KO7MBM8H1HESYY7HIIOUZJGX.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreGraphics-4BNH92LIYUI08D14IOI5AX1BG.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/FileProvider-DJL879E7JJZDIDJRSDMOSP846.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/UniformTypeIdentifiers-8OLPIFMDE6784N2Q4Z1EYMYPR.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdbool-F0FQNF0JI758I8BBVBMAG6H5C.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreVideo-ERJNZY01K7TWP3SWPLBE59XX3.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Metal-29PZEG5LL61QUDEL6SP5SW1XA.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/UIKit-D6DXWWO4JGRNKWLR863SW0V6Y.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_tgmath-2U6JWQUYN05COZVZQ8NM0BUQV.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdatomic-BSRVW0BQEDXGNFVRH6SXCZV8Q.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreImage-1KYA213RKKQ2IQU8981RQYFGQ.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stddef-7C52JSCHH8MRU6R2G151RCEW5.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/CoreText-B07UNQCQC8F8GE8OCPYP9SJJU.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/sys_types-2TIUF7QG33L8PE33BF1BYQ1JO.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/os-29FSJXVC6CWY4HC246MU6QFTB.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/MachO-DYRP124LPSS67II5VZ1NKRJ19.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_DarwinFoundation1-60P2B7CBJTFL1CGD562Z7ALT0.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/os_object-3Z7RKEYNC8XTMUWTE1NWIHIFP.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_inttypes-EIWKV31197RPCZYS9EGKQCS0H.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/Darwin-6VR8P866O4NLLULIWFVFRDMM4.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/_Builtin_stdarg-9G77N7HD1AGHOR1Y2V8I12Q.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/ImageIO-AD7342ZF0O8JGUYM0V30977TK.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/OSLog-1EBH3IJ7M4BWIUYO63W8Q9Z1Q.pcm /Users/runner/work/_temp/build/ModuleCache.noindex/QuartzCore-DBPZ6FO7TTLFHBYTY24CSW7AE.pcm /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-dependencies-1.json (in target 'TunerSimon' from project 'TunerSimon')
+
+CompileSwift normal arm64 (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    
+/Users/runner/work/tuner-simon/tuner-simon/TunerSimon/ContentView.swift:80:14: warning: 'onChange(of:perform:)' was deprecated in iOS 17.0: Use `onChange` with a two or zero parameter action closure instead.
+            .onChange(of: pitchHz) { newValue in
+             ^
+/Users/runner/work/tuner-simon/tuner-simon/TunerSimon/ContentView.swift:251:18: warning: 'onChange(of:perform:)' was deprecated in iOS 17.0: Use `onChange` with a two or zero parameter action closure instead.
+                .onChange(of: selectedKey) { k in
+                 ^
+
+SwiftDriverJobDiscovery normal arm64 Compiling TunerSimonApp.swift, ContentView.swift, Models.swift (in target 'TunerSimon' from project 'TunerSimon')
+
+SwiftDriver\ Compilation\ Requirements TunerSimon normal arm64 com.apple.xcode.tools.swift.compiler (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name TunerSimon -O -whole-module-optimization @/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -F /Users/runner/work/_temp/build/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64 -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/_temp/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/_temp/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/_temp/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-generated-files.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-own-target-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon-project-headers.hmap -Xcc -I/Users/runner/work/_temp/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-Swift.h -working-directory /Users/runner/work/tuner-simon/tuner-simon -no-emit-module-separately-wmo
+
+SwiftMergeGeneratedHeaders /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources/TunerSimon-Swift.h /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-Swift.h (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-Swift.h -o /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/DerivedSources/TunerSimon-Swift.h
+
+Copy /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.swiftmodule /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.swiftdoc /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftdoc (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftdoc /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.abi.json /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.abi.json (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.abi.json /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftsourceinfo (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftsourceinfo /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Ld /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon normal (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -Os -L/Users/runner/work/_temp/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/_temp/build/Build/Products/Release-iphoneos -F/Users/runner/work/_temp/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/_temp/build/Build/Products/Release-iphoneos -filelist /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_lto.o -Xlinker -dependency_info -Xlinker /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.swiftmodule @/Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon-linker-args.resp -o /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon
+
+ExtractAppIntentsMetadata (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.BJReuA/Metal.xctoolchain --module-name TunerSimon --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.gregoire.tunersimon --output /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app --target-triple arm64-apple-ios17.0 --binary-file /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon --dependency-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon_dependency_info.dat --stringsdata-file /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftFileList --metadata-file-list /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/Objects-normal/arm64/TunerSimon.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-19 23:52:25.366 appintentsmetadataprocessor[4891:18338] Starting appintentsmetadataprocessor export
+2026-10-19 23:52:25.380 appintentsmetadataprocessor[4891:18338] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon --scan-folder /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Frameworks --scan-folder /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/PlugIns --scan-folder /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/SystemExtensions --scan-folder /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Extensions --platform iphoneos --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.BJReuA/Metal.xctoolchain --toolchain /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+GenerateDSYMFile /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app.dSYM /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/TunerSimon -o /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app.dSYM
+
+AppIntentsSSUTraining (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Info.plist --temp-dir-path /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/ssu --bundle-id com.gregoire.tunersimon --product-path /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app --extracted-metadata-path /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Metadata.appintents --metadata-file-list /Users/runner/work/_temp/build/Build/Intermediates.noindex/TunerSimon.build/Release-iphoneos/TunerSimon.build/TunerSimon.DependencyMetadataFileList --source-file /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app/Info.plist --archive-ssu-assets
+2026-10-19 23:52:25.514 appintentsnltrainingprocessor[4911:18392] Parsing options for appintentsnltrainingprocessor
+2026-10-19 23:52:25.514 appintentsnltrainingprocessor[4911:18392] Starting AppIntents SSU YAML Generation
+2026-10-19 23:52:25.531 appintentsnltrainingprocessor[4911:18392] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-RegisterExecutionPolicyException /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app
+
+Validate /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    builtin-validationUtility /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app -shallow-bundle -infoplist-subpath Info.plist
+warning: All interface orientations must be supported unless the app requires full screen. (in target 'TunerSimon' from project 'TunerSimon')
+
+Touch /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app (in target 'TunerSimon' from project 'TunerSimon')
+    cd /Users/runner/work/tuner-simon/tuner-simon
+    /usr/bin/touch -c /Users/runner/work/_temp/build/Build/Products/Release-iphoneos/TunerSimon.app
+
+** BUILD SUCCEEDED **
+
