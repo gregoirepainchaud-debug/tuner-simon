@@ -1,0 +1,101 @@
+# Fabrique un .ipa NON SIGNÉ de l'app « Accords Simon », pour installation par
+# SideStore (qui signe sur l'iPhone avec l'Apple ID gratuit de Grégoire).
+# Dépôt public : les minutes macOS GitHub Actions sont gratuites.
+# Le journal (et les lignes « error: ») est aussi rangé sur la branche ci-logs.
+name: build-ipa
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version de Xcode
+        run: xcodebuild -version
+
+      - name: Compiler l'app sans signature
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project TunerSimon.xcodeproj \
+            -scheme TunerSimon \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$RUNNER_TEMP/build" \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tee build.log
+
+      - name: Publier le journal sur la branche ci-logs
+        if: always()
+        run: |
+          grep -n "error:" build.log > errors.txt || true
+          tail -n 800 build.log > build-tail.log || true
+          for f in errors.txt build-tail.log; do
+            b64=$(base64 < "$f" | tr -d '\n')
+            name="errors-${{ github.run_id }}.txt"
+            [ "$f" = "errors.txt" ] || name="build-tail-${{ github.run_id }}.log"
+            curl -s -X PUT \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/contents/$name \
+              -d "{\"message\":\"CI $f run ${{ github.run_id }}\",\"content\":\"$b64\",\"branch\":\"ci-logs\"}" \
+              > /dev/null || true
+          done
+
+      - name: Assembler le .ipa non signé
+        run: |
+          APP=$(find "$RUNNER_TEMP/build" -name 'TunerSimon.app' -type d | head -1)
+          echo "App trouvée : $APP"
+          ls "$APP" | grep -c tunings.json
+          rm -rf Payload TunerSimon-unsigned.ipa
+          mkdir Payload
+          cp -R "$APP" Payload/
+          zip -qry TunerSimon-unsigned.ipa Payload
+          unzip -l TunerSimon-unsigned.ipa | head -15
+
+      - name: Préparer la Release "v1"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release view v1 --json tagName -q .tagName || gh release create v1 --title "Accords Simon (SideStore)" --notes "Builds non signés de l'app Accords Simon. À installer/mettre à jour via SideStore." --prerelease
+
+      - name: Publier le .ipa dans la Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload v1 TunerSimon-unsigned.ipa --clobber
+
+      - name: Générer et publier la source SideStore (apps.json)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          IPA_URL="https://github.com/${{ github.repository }}/releases/download/v1/TunerSimon-unsigned.ipa"
+          cat > apps.json << JSON
+          {
+            "name": "Accords Simon",
+            "identifier": "com.gregoire.tunersimon.source",
+            "apps": [
+              {
+                "name": "Accords Simon",
+                "bundleIdentifier": "com.gregoire.tunersimon",
+                "developerName": "Gregoire Painchaud",
+                "version": "0.1.${{ github.run_number }}",
+                "versionDate": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+                "downloadURL": "$IPA_URL",
+                "localizedDescription": "Tuner dédié aux 14 accords de Simon Tremblay (Palais Montcalm et Grand Théâtre de Québec). Étape 1 : interface, signal de test.",
+                "size": $(stat -f%z TunerSimon-unsigned.ipa)
+              }
+            ],
+            "news": []
+          }
+          JSON
+          cat apps.json
+          gh release upload v1 apps.json --clobber
