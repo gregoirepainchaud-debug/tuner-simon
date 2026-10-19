@@ -9,8 +9,12 @@ struct ContentView: View {
     @State private var currentKey: Int = 49          // La4 au départ
     @State private var testCents: Double = 0          // ÉTAPE 1 : signal de test (pas encore d'audio)
     @State private var displayedCents: Double = 0     // aiguille amortie
-    @State private var sweep = false
-    @State private var sweepPhase: Double = 0
+    @State private var demo = true                    // démo active dès l'ouverture
+    @State private var demoCycle: [(target: Double, dur: Double)] = []
+    @State private var demoSeg = 0
+    @State private var demoSegT: Double = 0
+    @State private var demoFrom: Double = 0
+    @State private var strike = 0
 
     private let tick = Timer.publish(every: 0.03, on: .main, in: .common).autoconnect()
 
@@ -39,10 +43,7 @@ struct ContentView: View {
         .background(Color.black)
         .onAppear { pitchHz = storedPitch(for: tuningID) }
         .onReceive(tick) { _ in
-            if sweep {
-                sweepPhase += 0.045
-                testCents = 28 * sin(sweepPhase)
-            }
+            if demo { advanceDemo(dt: 0.03) }
             // Amortissement de l'aiguille : elle converge, sans changer la tolérance.
             displayedCents += (testCents - displayedCents) * 0.35
         }
@@ -120,13 +121,58 @@ struct ContentView: View {
             Divider().frame(height: 28)
             Text("Test").foregroundColor(.gray)
             Slider(value: $testCents, in: -30...30, step: 0.1)
-                .disabled(sweep)
-            Toggle("Balayage", isOn: $sweep)
+                .disabled(demo)
+            Toggle("Démo", isOn: $demo)
                 .fixedSize()
         }
     }
 
     // MARK: - Aides
+
+    /// Mode démo : simule une vraie recherche de la note. Chaque « frappe »
+    /// part loin, puis les corrections zigzaguent en dépassant le zéro des
+    /// deux côtés avec une amplitude qui décroît (× −0,55 à chaque coup de
+    /// clé), micro-tremblement près du centre, stabilisation dans le vert,
+    /// puis nouvelle frappe ailleurs.
+    private func buildCycle() -> [(target: Double, dur: Double)] {
+        let starts: [Double] = [17, -21, 12, -9, 24, -15]
+        let finals: [Double] = [0.05, -0.08, 0.0, 0.09]
+        var segs: [(target: Double, dur: Double)] = []
+        var v = starts[strike % starts.count]
+        while abs(v) > 0.45 {
+            segs.append((target: v, dur: 0.8))
+            v *= -0.55
+        }
+        segs.append((target: v, dur: 0.7))
+        segs.append((target: finals[strike % finals.count], dur: 1.8)) // stabilisé, vert
+        strike += 1
+        return segs
+    }
+
+    private func advanceDemo(dt: Double) {
+        if demoCycle.isEmpty {
+            demoCycle = buildCycle()
+            demoSeg = 0; demoSegT = 0; demoFrom = testCents
+        }
+        demoSegT += dt
+        let seg = demoCycle[demoSeg]
+        if demoSegT >= seg.dur {
+            demoSeg += 1; demoSegT = 0; demoFrom = testCents
+            if demoSeg >= demoCycle.count {
+                demoCycle = buildCycle(); demoSeg = 0; demoFrom = testCents
+            }
+            return
+        }
+        let p = demoSegT / seg.dur
+        if p < 0.45 {
+            // Déplacement vers la nouvelle position (coup de clé), easing doux.
+            let e = (1 - cos(.pi * p / 0.45)) / 2
+            testCents = demoFrom + (seg.target - demoFrom) * e
+        } else {
+            // Tenue, avec un micro-tremblement comme un vrai signal.
+            testCents = seg.target + 0.02 * sin(demoSegT * 17)
+        }
+    }
 
     private func step(_ delta: Int) {
         currentKey = min(88, max(1, currentKey + delta))
